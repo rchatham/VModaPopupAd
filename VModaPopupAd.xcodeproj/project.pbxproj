@@ -1,0 +1,507 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		307A34A21D34553900C08305 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 307A34A11D34553900C08305 /* AppDelegate.swift */; };
+		307A34A41D34553900C08305 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 307A34A31D34553900C08305 /* ViewController.swift */; };
+		307A34A71D34553900C08305 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 307A34A51D34553900C08305 /* Main.storyboard */; };
+		307A34A91D34553900C08305 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 307A34A81D34553900C08305 /* Assets.xcassets */; };
+		307A34AC1D34553900C08305 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 307A34AA1D34553900C08305 /* LaunchScreen.storyboard */; };
+		307A34B71D34553900C08305 /* VModaPopupAdTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 307A34B61D34553900C08305 /* VModaPopupAdTests.swift */; };
+		307A34C21D34553900C08305 /* VModaPopupAdUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 307A34C11D34553900C08305 /* VModaPopupAdUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		307A34B31D34553900C08305 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 307A34961D34553800C08305 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 307A349D1D34553800C08305;
+			remoteInfo = VModaPopupAd;
+		};
+		307A34BE1D34553900C08305 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 307A34961D34553800C08305 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 307A349D1D34553800C08305;
+			remoteInfo = VModaPopupAd;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		307A349E1D34553800C08305 /* VModaPopupAd.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VModaPopupAd.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		307A34A11D34553900C08305 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		307A34A31D34553900C08305 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		307A34A61D34553900C08305 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		307A34A81D34553900C08305 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		307A34AB1D34553900C08305 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		307A34AD1D34553900C08305 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		307A34B21D34553900C08305 /* VModaPopupAdTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VModaPopupAdTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		307A34B61D34553900C08305 /* VModaPopupAdTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VModaPopupAdTests.swift; sourceTree = "<group>"; };
+		307A34B81D34553900C08305 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		307A34BD1D34553900C08305 /* VModaPopupAdUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VModaPopupAdUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		307A34C11D34553900C08305 /* VModaPopupAdUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VModaPopupAdUITests.swift; sourceTree = "<group>"; };
+		307A34C31D34553900C08305 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		307A349B1D34553800C08305 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		307A34AF1D34553900C08305 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		307A34BA1D34553900C08305 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		307A34951D34553800C08305 = {
+			isa = PBXGroup;
+			children = (
+				307A34A01D34553900C08305 /* VModaPopupAd */,
+				307A34B51D34553900C08305 /* VModaPopupAdTests */,
+				307A34C01D34553900C08305 /* VModaPopupAdUITests */,
+				307A349F1D34553800C08305 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		307A349F1D34553800C08305 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				307A349E1D34553800C08305 /* VModaPopupAd.app */,
+				307A34B21D34553900C08305 /* VModaPopupAdTests.xctest */,
+				307A34BD1D34553900C08305 /* VModaPopupAdUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		307A34A01D34553900C08305 /* VModaPopupAd */ = {
+			isa = PBXGroup;
+			children = (
+				307A34A11D34553900C08305 /* AppDelegate.swift */,
+				307A34A31D34553900C08305 /* ViewController.swift */,
+				307A34A51D34553900C08305 /* Main.storyboard */,
+				307A34A81D34553900C08305 /* Assets.xcassets */,
+				307A34AA1D34553900C08305 /* LaunchScreen.storyboard */,
+				307A34AD1D34553900C08305 /* Info.plist */,
+			);
+			path = VModaPopupAd;
+			sourceTree = "<group>";
+		};
+		307A34B51D34553900C08305 /* VModaPopupAdTests */ = {
+			isa = PBXGroup;
+			children = (
+				307A34B61D34553900C08305 /* VModaPopupAdTests.swift */,
+				307A34B81D34553900C08305 /* Info.plist */,
+			);
+			path = VModaPopupAdTests;
+			sourceTree = "<group>";
+		};
+		307A34C01D34553900C08305 /* VModaPopupAdUITests */ = {
+			isa = PBXGroup;
+			children = (
+				307A34C11D34553900C08305 /* VModaPopupAdUITests.swift */,
+				307A34C31D34553900C08305 /* Info.plist */,
+			);
+			path = VModaPopupAdUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		307A349D1D34553800C08305 /* VModaPopupAd */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 307A34C61D34553900C08305 /* Build configuration list for PBXNativeTarget "VModaPopupAd" */;
+			buildPhases = (
+				307A349A1D34553800C08305 /* Sources */,
+				307A349B1D34553800C08305 /* Frameworks */,
+				307A349C1D34553800C08305 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = VModaPopupAd;
+			productName = VModaPopupAd;
+			productReference = 307A349E1D34553800C08305 /* VModaPopupAd.app */;
+			productType = "com.apple.product-type.application";
+		};
+		307A34B11D34553900C08305 /* VModaPopupAdTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 307A34C91D34553900C08305 /* Build configuration list for PBXNativeTarget "VModaPopupAdTests" */;
+			buildPhases = (
+				307A34AE1D34553900C08305 /* Sources */,
+				307A34AF1D34553900C08305 /* Frameworks */,
+				307A34B01D34553900C08305 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				307A34B41D34553900C08305 /* PBXTargetDependency */,
+			);
+			name = VModaPopupAdTests;
+			productName = VModaPopupAdTests;
+			productReference = 307A34B21D34553900C08305 /* VModaPopupAdTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		307A34BC1D34553900C08305 /* VModaPopupAdUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 307A34CC1D34553900C08305 /* Build configuration list for PBXNativeTarget "VModaPopupAdUITests" */;
+			buildPhases = (
+				307A34B91D34553900C08305 /* Sources */,
+				307A34BA1D34553900C08305 /* Frameworks */,
+				307A34BB1D34553900C08305 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				307A34BF1D34553900C08305 /* PBXTargetDependency */,
+			);
+			name = VModaPopupAdUITests;
+			productName = VModaPopupAdUITests;
+			productReference = 307A34BD1D34553900C08305 /* VModaPopupAdUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		307A34961D34553800C08305 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = "Reid Chatham";
+				TargetAttributes = {
+					307A349D1D34553800C08305 = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+					307A34B11D34553900C08305 = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = 307A349D1D34553800C08305;
+					};
+					307A34BC1D34553900C08305 = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = 307A349D1D34553800C08305;
+					};
+				};
+			};
+			buildConfigurationList = 307A34991D34553800C08305 /* Build configuration list for PBXProject "VModaPopupAd" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 307A34951D34553800C08305;
+			productRefGroup = 307A349F1D34553800C08305 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				307A349D1D34553800C08305 /* VModaPopupAd */,
+				307A34B11D34553900C08305 /* VModaPopupAdTests */,
+				307A34BC1D34553900C08305 /* VModaPopupAdUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		307A349C1D34553800C08305 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				307A34AC1D34553900C08305 /* LaunchScreen.storyboard in Resources */,
+				307A34A91D34553900C08305 /* Assets.xcassets in Resources */,
+				307A34A71D34553900C08305 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		307A34B01D34553900C08305 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		307A34BB1D34553900C08305 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		307A349A1D34553800C08305 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				307A34A41D34553900C08305 /* ViewController.swift in Sources */,
+				307A34A21D34553900C08305 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		307A34AE1D34553900C08305 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				307A34B71D34553900C08305 /* VModaPopupAdTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		307A34B91D34553900C08305 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				307A34C21D34553900C08305 /* VModaPopupAdUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		307A34B41D34553900C08305 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 307A349D1D34553800C08305 /* VModaPopupAd */;
+			targetProxy = 307A34B31D34553900C08305 /* PBXContainerItemProxy */;
+		};
+		307A34BF1D34553900C08305 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 307A349D1D34553800C08305 /* VModaPopupAd */;
+			targetProxy = 307A34BE1D34553900C08305 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		307A34A51D34553900C08305 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				307A34A61D34553900C08305 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		307A34AA1D34553900C08305 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				307A34AB1D34553900C08305 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		307A34C41D34553900C08305 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		307A34C51D34553900C08305 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		307A34C71D34553900C08305 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = VModaPopupAd/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.rchatham.VModaPopupAd;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		307A34C81D34553900C08305 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = VModaPopupAd/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.rchatham.VModaPopupAd;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		307A34CA1D34553900C08305 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = VModaPopupAdTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.rchatham.VModaPopupAdTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/VModaPopupAd.app/VModaPopupAd";
+			};
+			name = Debug;
+		};
+		307A34CB1D34553900C08305 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = VModaPopupAdTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.rchatham.VModaPopupAdTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/VModaPopupAd.app/VModaPopupAd";
+			};
+			name = Release;
+		};
+		307A34CD1D34553900C08305 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = VModaPopupAdUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.rchatham.VModaPopupAdUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = VModaPopupAd;
+			};
+			name = Debug;
+		};
+		307A34CE1D34553900C08305 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = VModaPopupAdUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.rchatham.VModaPopupAdUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = VModaPopupAd;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		307A34991D34553800C08305 /* Build configuration list for PBXProject "VModaPopupAd" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				307A34C41D34553900C08305 /* Debug */,
+				307A34C51D34553900C08305 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		307A34C61D34553900C08305 /* Build configuration list for PBXNativeTarget "VModaPopupAd" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				307A34C71D34553900C08305 /* Debug */,
+				307A34C81D34553900C08305 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		307A34C91D34553900C08305 /* Build configuration list for PBXNativeTarget "VModaPopupAdTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				307A34CA1D34553900C08305 /* Debug */,
+				307A34CB1D34553900C08305 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		307A34CC1D34553900C08305 /* Build configuration list for PBXNativeTarget "VModaPopupAdUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				307A34CD1D34553900C08305 /* Debug */,
+				307A34CE1D34553900C08305 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 307A34961D34553800C08305 /* Project object */;
+}
