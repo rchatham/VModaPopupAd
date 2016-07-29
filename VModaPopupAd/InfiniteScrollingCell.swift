@@ -8,16 +8,31 @@
 
 import UIKit
 
-class InfiniteScrollingCell: UICollectionViewCell {
+public class InfiniteScrollingCell: UICollectionViewCell {
 
-    @IBOutlet weak var imageView: UIImageView!
-    override func awakeFromNib() {
+    @IBOutlet weak var imageView: UIImageView! {
+        didSet {
+            imageView?.image = image
+        }
+    }
+    
+    override public func awakeFromNib() {
         super.awakeFromNib()
         
     }
     
-    func configureCell(photoName:String){
-        imageView?.image = UIImage(named: photoName)
+    private var image: UIImage? {
+        didSet {
+            imageView?.image = image
+        }
+    }
+    
+    public func configureCell(photoName:String) {
+        guard let image = UIImage(named: photoName) else {
+            fatalError("Image not found!")
+        }
+        print("set Cell Image")
+        self.image = image
     }
 
 }

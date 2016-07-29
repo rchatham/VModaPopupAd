@@ -141,6 +141,9 @@ class ViewController: UIViewController {
             .backgroundColor(.blackColor())
             .buttonBackgroundColor(.blackColor())
             .buttonForegroundColor(.whiteColor())
+            .innerMargin(UIEdgeInsets(top: 5,left: 5,bottom: 5,right: 5))
+//            .titleFont(UIFont(name: <#T##String#>, size: <#T##CGFloat#>))
+//            .buttonFont(UIFont(name: <#T##String#>, size: <#T##CGFloat#>))
         
         vc.popupView.style(style)
         
@@ -151,9 +154,10 @@ class ViewController: UIViewController {
                 switch view.tag {
                 
                 case "VModaPopup".hash:
-                    vc.popupView.viewType = .Web(URL: self.url) //.Image(image: UIImage(named: "crossfade")!)
+                    vc.popupView.viewType = .Image(image: UIImage(named: "crossfade")!)
                     
                     vc.popupView
+                        .title("VModa Headphones!")
                         .addExternalLinkPattern(.URLScheme)
                         .addButton(PTPopupWebViewButton(type: .LinkClose(NSURL(string: "https://v-moda.com/over-ear-on-ear")!)).title("Get them now!"))
                         .addButton(PTPopupWebViewButton(type: .Close).useDefaultImage().title("close"))
@@ -162,9 +166,18 @@ class ViewController: UIViewController {
                     
                     let merchScroller = InfiniteScrollingView(frame: CGRectZero, useSampleData: true)
                     
+                    merchScroller.pagingEnabled = true
+                    merchScroller.scrollEnabled = true
+                    
+                    let layout = (merchScroller.collectionViewLayout as! UICollectionViewFlowLayout)
+                    layout.scrollDirection = .Horizontal
+                    layout.minimumLineSpacing = 0
+                    layout.minimumInteritemSpacing = 0
+                    
                     vc.popupView.viewType = .Custom(view: merchScroller)
                     
                     vc.popupView
+                        .title("Crossfader Merch!")
                         .addExternalLinkPattern(.URLScheme)
                         .addButton(PTPopupWebViewButton(type: .LinkClose(NSURL(string: "https://v-moda.com/over-ear-on-ear")!)).title("Get them now!"))
                         .addButton(PTPopupWebViewButton(type: .Close).useDefaultImage().title("close"))

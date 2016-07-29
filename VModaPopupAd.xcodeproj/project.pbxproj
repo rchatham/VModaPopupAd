@@ -23,6 +23,7 @@
 		307A34F31D34696E00C08305 /* PTPopupWebViewButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 307A34EF1D34696E00C08305 /* PTPopupWebViewButton.swift */; };
 		307A34F41D34696E00C08305 /* PTPopupWebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 307A34F01D34696E00C08305 /* PTPopupWebViewController.swift */; };
 		307A34F51D34696E00C08305 /* PTPopupWebViewStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 307A34F11D34696E00C08305 /* PTPopupWebViewStyle.swift */; };
+		309F3A0A1D4BBCE200C3314A /* InfiniteScrollingCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 309F3A081D4BBCE200C3314A /* InfiniteScrollingCell.xib */; };
 		30B6EABB1D48183A0057463A /* ImageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30B6EAB91D48183A0057463A /* ImageCell.swift */; };
 		30B6EABC1D48183A0057463A /* ImageCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 30B6EABA1D48183A0057463A /* ImageCell.xib */; };
 /* End PBXBuildFile section */
@@ -80,6 +81,7 @@
 		307A34EF1D34696E00C08305 /* PTPopupWebViewButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PTPopupWebViewButton.swift; sourceTree = "<group>"; };
 		307A34F01D34696E00C08305 /* PTPopupWebViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PTPopupWebViewController.swift; sourceTree = "<group>"; };
 		307A34F11D34696E00C08305 /* PTPopupWebViewStyle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PTPopupWebViewStyle.swift; sourceTree = "<group>"; };
+		309F3A081D4BBCE200C3314A /* InfiniteScrollingCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = InfiniteScrollingCell.xib; sourceTree = "<group>"; };
 		30B6EAB91D48183A0057463A /* ImageCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageCell.swift; sourceTree = "<group>"; };
 		30B6EABA1D48183A0057463A /* ImageCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ImageCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -149,6 +151,7 @@
 				307A34F11D34696E00C08305 /* PTPopupWebViewStyle.swift */,
 				303171A91D4AC8B9001D6C8F /* InfiniteScrollingView.swift */,
 				303171AB1D4AC8E6001D6C8F /* InfiniteScrollingCell.swift */,
+				309F3A081D4BBCE200C3314A /* InfiniteScrollingCell.xib */,
 			);
 			path = VModaPopupAd;
 			sourceTree = "<group>";
@@ -282,6 +285,7 @@
 				307A34EC1D34695500C08305 /* PTPopupWebView.xib in Resources */,
 				307A34A91D34553900C08305 /* Assets.xcassets in Resources */,
 				307A34ED1D34695500C08305 /* PTPopupWebViewControllerBlur.xib in Resources */,
+				309F3A0A1D4BBCE200C3314A /* InfiniteScrollingCell.xib in Resources */,
 				307A34A71D34553900C08305 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

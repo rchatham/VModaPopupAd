@@ -9,7 +9,7 @@
 import UIKit
 
 public protocol InfiniteScrollingViewDelegate: class {
-    func infiniteScrollingView(infiniteScrollingView: InfiniteScrollingView, didSelectMerchItemAtIndexPath: NSIndexPath)
+    func infiniteScrollingView(infiniteScrollingView: InfiniteScrollingView, didSelectCellAtIndexPath: NSIndexPath)
 }
 
 public class InfiniteScrollingView: UICollectionView {
@@ -55,9 +55,16 @@ public class InfiniteScrollingView: UICollectionView {
     private func setup() {
         delegate = self
         dataSource = self
-        pagingEnabled = true
+//        pagingEnabled = true
+//        scrollEnabled = true
+//        
+//        let layout = (collectionViewLayout as! UICollectionViewFlowLayout)
+//        layout.scrollDirection = .Horizontal
+//        layout.minimumLineSpacing = 0
+//        layout.minimumInteritemSpacing = 0
         
-        registerClass(InfiniteScrollingCell.self, forCellWithReuseIdentifier: String(InfiniteScrollingCell))
+        let nib = UINib(nibName: String(InfiniteScrollingCell), bundle: nil)
+        registerNib(nib, forCellWithReuseIdentifier: String(InfiniteScrollingCell))
     }
 }
 
@@ -87,7 +94,7 @@ extension InfiniteScrollingView : UICollectionViewDelegate {
     }
     
     public func collectionView(collectionView: UICollectionView, didSelectItemAtIndexPath indexPath: NSIndexPath) {
-        infiniteScrollViewDelegate?.infiniteScrollingView(self, didSelectMerchItemAtIndexPath: indexPath)
+        infiniteScrollViewDelegate?.infiniteScrollingView(self, didSelectCellAtIndexPath: indexPath)
     }
 }
 
@@ -95,11 +102,11 @@ extension InfiniteScrollingView : UICollectionViewDelegateFlowLayout {
     
     public func collectionView(collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAtIndexPath indexPath: NSIndexPath) -> CGSize {
         let size = collectionView.frame.size
-        return CGSize(width: size.width - 10, height: size.height - 10)
+        return CGSize(width: size.width, height: size.height)
     }
     
     public func collectionView(collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAtIndex section: Int) -> UIEdgeInsets {
-            return UIEdgeInsetsMake(5, 5, 5, 5)
+        return UIEdgeInsetsMake(0,0,0,0)
     }
 }
 

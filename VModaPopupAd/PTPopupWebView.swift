@@ -200,7 +200,6 @@ public class PTPopupWebView : UIView {
             }
             // WKNavigationDelegate
             webView.navigationDelegate = self
-            webView.frame = view.frame
             view = webView
             
         case .Image(let image):
@@ -214,7 +213,6 @@ public class PTPopupWebView : UIView {
                         toItem: imageView,     attribute: attribute, multiplier: 1.0, constant: 0.0)
                 )
             }
-            imageView.frame = view.frame
             view = imageView
             
         case .Custom(let view):
@@ -226,7 +224,6 @@ public class PTPopupWebView : UIView {
                         toItem: view,          attribute: attribute, multiplier: 1.0, constant: 0.0)
                 )
             }
-            view.frame = self.view.frame
             self.view = view
         }
         viewContainer.addSubview(view)
@@ -243,7 +240,6 @@ public class PTPopupWebView : UIView {
         webView.addObserver(self, forKeyPath:"URL", options:.New, context:nil)
         webView.addObserver(self, forKeyPath:"load" , options:.New, context:nil)
         webView.addObserver(self, forKeyPath:"estimatedProgress" , options:.New, context:nil)
-
     }
 
     override public func willMoveToSuperview(newSuperview: UIView?) {
