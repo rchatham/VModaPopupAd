@@ -7,7 +7,9 @@
 //
 
 import UIKit
-//import PTPopupWebView
+import MerchScroller
+import DJZPopupWebView
+
 
 class ViewController: UIViewController {
     
@@ -122,7 +124,6 @@ class ViewController: UIViewController {
 //        let tap = UILongPressGestureRecognizer(target: self, action: #selector(ViewController.pressed(_:)))
 //        lastView.addGestureRecognizer(tap)
         
-        
     }
     
     override func didReceiveMemoryWarning() {
@@ -141,52 +142,99 @@ class ViewController: UIViewController {
             .backgroundColor(.blackColor())
             .buttonBackgroundColor(.blackColor())
             .buttonForegroundColor(.whiteColor())
-            .innerMargin(UIEdgeInsets(top: 5,left: 5,bottom: 5,right: 5))
-//            .titleFont(UIFont(name: <#T##String#>, size: <#T##CGFloat#>))
-//            .buttonFont(UIFont(name: <#T##String#>, size: <#T##CGFloat#>))
+            .innerMargin(UIEdgeInsetsMake(0,10,0,10))
+            .titleFont(UIFont.djzFont(22))
+            .buttonFont(UIFont.djzFont(17))
+            .buttonDistribution(.Equal)
         
         vc.popupView.style(style)
         
 //        vc.popupView.viewType = .Web(URL: url)
+        
+        let merch = ["merch-1","merch-2","merch-3","merch-4"]
         
         if let view = sender.view {
             let popup = {
                 switch view.tag {
                 
                 case "VModaPopup".hash:
+                    
                     vc.popupView.viewType = .Image(image: UIImage(named: "crossfade")!)
                     
+                    vc.popupView.style(vc.popupView.style!.innerMargin(UIEdgeInsetsMake(10,10,10,10)))
+                    
                     vc.popupView
-                        .title("VModa Headphones!")
+                        .title("VMODA HEADPHONES!")
                         .addExternalLinkPattern(.URLScheme)
-                        .addButton(PTPopupWebViewButton(type: .LinkClose(NSURL(string: "https://v-moda.com/over-ear-on-ear")!)).title("Get them now!"))
-                        .addButton(PTPopupWebViewButton(type: .Close).useDefaultImage().title("close"))
+                        .addButton(PTPopupWebViewButton(type: .LinkClose(NSURL(string: "https://v-moda.com/over-ear-on-ear")!)).title("$429.00!!"))
+                        .addButton(PTPopupWebViewButton(type: .Close).useDefaultImage().title("CLOSE"))
+                    
+                    // show PTPopupWebViewController
+                    vc.show() {
+                        print("Closed popupView")
+                    }
                     
                 case "MerchPopup".hash:
                     
-                    let merchScroller = InfiniteScrollingView(frame: CGRectZero, useSampleData: true)
+//                    let merchScroller = InfiniteScrollingView(frame: CGRectZero, photoURLs: merch)
+                    let merchScroller = MerchScroller(frame: CGRectZero, photoURLs: merch)
                     
-                    merchScroller.pagingEnabled = true
+                    merchScroller.didSelectCellAtIndex = { index in
+                        // Link to merch item in store
+                    }
+                    
+                    merchScroller.pagingEnabled = false
                     merchScroller.scrollEnabled = true
                     
                     let layout = (merchScroller.collectionViewLayout as! UICollectionViewFlowLayout)
                     layout.scrollDirection = .Horizontal
-                    layout.minimumLineSpacing = 0
-                    layout.minimumInteritemSpacing = 0
+                    layout.minimumLineSpacing = 10
+                    layout.minimumInteritemSpacing = 10
                     
                     vc.popupView.viewType = .Custom(view: merchScroller)
                     
+//                    let merchScroller = InfiniteScrollingPageViewController(imageURLs: merch)
+//                    vc.addChildViewController(merchScroller)
+//                    vc.popupView.viewType = .Custom(view: merchScroller.view)
+                    
                     vc.popupView
-                        .title("Crossfader Merch!")
+                        .title("CROSSFADER MERCH!")
                         .addExternalLinkPattern(.URLScheme)
-                        .addButton(PTPopupWebViewButton(type: .LinkClose(NSURL(string: "https://v-moda.com/over-ear-on-ear")!)).title("Get them now!"))
-                        .addButton(PTPopupWebViewButton(type: .Close).useDefaultImage().title("close"))
+                        .addButton(PTPopupWebViewButton(type: .LinkClose(NSURL(string: "https://teespring.com/stores/crossfader")!)).title("$17.99 AND UP!"))
+                        .addButton(PTPopupWebViewButton(type: .Close).useDefaultImage().title("CLOSE"))
+                    
+                    
+                    // show PTPopupWebViewController
+                    vc.show() {
+                        print("Closed popupView")
+                    }
+                    
+                case "ClubCrossfaderPopup".hash:
+                    
+                    vc.popupView.viewType = .Web(URL: NSURL(string: "https://crossfader.fm/chat"))
+                    vc.popupView.style(vc.popupView.style!.innerMargin(UIEdgeInsetsMake(10,10,10,10)))
+                    
+                    vc.popupView
+                        .title("CLUB CROSSFADER!")
+                        .addExternalLinkPattern(.URLScheme)
+                        .addButton(PTPopupWebViewButton(type: .LinkClose(NSURL(string: "https://crossfader.fm/chat")!)).title("$5/MONTH!"))
+                        .addButton(PTPopupWebViewButton(type: .Close).useDefaultImage().title("CLOSE"))
+                    
+                    
+                    // show PTPopupWebViewController
+                    vc.show() {
+                        print("Closed popupView")
+                    }
+                    
+                case "StorePopup".hash:
+                    
+                    let merchCoordinator = MerchCoordinator(popupViewController: vc)
+                    
+                    merchCoordinator.presentStoreFromViewController(self, completion: nil)
                     
                 default: break
                 }
                 
-                // show PTPopupWebViewController
-                vc.show()
             }
             
             // touch animation
@@ -207,7 +255,6 @@ class ViewController: UIViewController {
                     )
                 }
             )
-            
         }
     }
     

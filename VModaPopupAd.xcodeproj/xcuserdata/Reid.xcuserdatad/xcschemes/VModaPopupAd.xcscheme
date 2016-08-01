@@ -48,6 +48,36 @@
                ReferencedContainer = "container:VModaPopupAd.xcodeproj">
             </BuildableReference>
          </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "309F3A881D4BEC7700C3314A"
+               BuildableName = "InfiniteScrollingViewTests.xctest"
+               BlueprintName = "InfiniteScrollingViewTests"
+               ReferencedContainer = "container:VModaPopupAd.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "309F3AAD1D4BECE600C3314A"
+               BuildableName = "DJZPopupWebViewTests.xctest"
+               BlueprintName = "DJZPopupWebViewTests"
+               ReferencedContainer = "container:VModaPopupAd.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "309F3AE81D4C196B00C3314A"
+               BuildableName = "MerchScrollerTests.xctest"
+               BlueprintName = "MerchScrollerTests"
+               ReferencedContainer = "container:VModaPopupAd.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
       <MacroExpansion>
          <BuildableReference

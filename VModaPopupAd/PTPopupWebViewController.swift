@@ -228,6 +228,8 @@ public class PTPopupWebViewController : UIViewController {
         return self
     }
 
+    private var completion: Void->Void = {_ in}
+    
     /**
      Show the popup view.
      
@@ -238,7 +240,10 @@ public class PTPopupWebViewController : UIViewController {
      - parameters:
         - presentViewController: transition source ViewController
      */
-    public func show(presentViewController: UIViewController? = nil) {
+    public func show(presentViewController: UIViewController? = nil, completion: (Void->Void)?) {
+        
+        if let completion = completion { self.completion = completion }
+        
         modalPresentationStyle = UIModalPresentationStyle.OverCurrentContext
         modalTransitionStyle = self.transitionStyle
         
@@ -246,10 +251,10 @@ public class PTPopupWebViewController : UIViewController {
             presentViewController.presentViewController(self, animated: true, completion: nil)
         }
         else {
-            var rootViewController = UIApplication.sharedApplication().keyWindow?.rootViewController;
+            var rootViewController = UIApplication.sharedApplication().keyWindow?.rootViewController
             if rootViewController != nil {
                 while ((rootViewController!.presentedViewController) != nil) {
-                    rootViewController = rootViewController!.presentedViewController;
+                    rootViewController = rootViewController!.presentedViewController
                 }
                 
                 rootViewController!.presentViewController(self, animated: true, completion: nil)
@@ -265,7 +270,7 @@ public class PTPopupWebViewController : UIViewController {
 extension PTPopupWebViewController : PTPopupWebViewDelegate {
     public func close() {
         let completion:(Bool) -> Void = { completed in
-            self.dismissViewControllerAnimated(true, completion: nil)
+            self.dismissViewControllerAnimated(true, completion: self.completion)
         }
         
         switch popupDisappearStyle {

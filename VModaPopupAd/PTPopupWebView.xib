@@ -5,7 +5,7 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PTPopupWebView" customModule="VModaPopupAd" customModuleProvider="target">
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PTPopupWebView" customModule="DJZPopupWebView" customModuleProvider="target">
             <connections>
                 <outlet property="buttonContainer" destination="MzJ-7l-yph" id="1m2-P0-qqy"/>
                 <outlet property="buttonContainerHeight" destination="0Rl-XC-kad" id="Hd7-K5-ovW"/>

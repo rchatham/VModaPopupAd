@@ -10,15 +10,25 @@ import UIKit
 
 class ImageCell: UICollectionViewCell {
     
-    @IBOutlet weak var imageView: UIImageView!
+    @IBOutlet weak var imageView: UIImageView! {
+        didSet {
+            imageView?.image = image
+        }
+    }
 
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
     }
     
+    var image: UIImage? {
+        didSet {
+            imageView?.image = image
+        }
+    }
+    
     func configureForObject(object: UIImage) {
-        imageView.image = object
+        image = object
     }
 
 }

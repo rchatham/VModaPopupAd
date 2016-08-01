@@ -4,6 +4,21 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>DJZPopupWebView.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>2</integer>
+		</dict>
+		<key>InfiniteScrollingView.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
+		<key>MerchScroller.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>3</integer>
+		</dict>
 		<key>VModaPopupAd.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
@@ -23,6 +38,36 @@
 			<true/>
 		</dict>
 		<key>307A34BC1D34553900C08305</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>309F3A7F1D4BEC7700C3314A</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>309F3A881D4BEC7700C3314A</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>309F3AA41D4BECE500C3314A</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>309F3AAD1D4BECE600C3314A</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>309F3ADF1D4C196B00C3314A</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>309F3AE81D4C196B00C3314A</key>
 		<dict>
 			<key>primary</key>
 			<true/>

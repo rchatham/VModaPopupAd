@@ -7,8 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		303171AA1D4AC8B9001D6C8F /* InfiniteScrollingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 303171A91D4AC8B9001D6C8F /* InfiniteScrollingView.swift */; };
-		303171AC1D4AC8E6001D6C8F /* InfiniteScrollingCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 303171AB1D4AC8E6001D6C8F /* InfiniteScrollingCell.swift */; };
 		307A34A21D34553900C08305 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 307A34A11D34553900C08305 /* AppDelegate.swift */; };
 		307A34A41D34553900C08305 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 307A34A31D34553900C08305 /* ViewController.swift */; };
 		307A34A71D34553900C08305 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 307A34A51D34553900C08305 /* Main.storyboard */; };
@@ -16,14 +14,63 @@
 		307A34AC1D34553900C08305 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 307A34AA1D34553900C08305 /* LaunchScreen.storyboard */; };
 		307A34B71D34553900C08305 /* VModaPopupAdTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 307A34B61D34553900C08305 /* VModaPopupAdTests.swift */; };
 		307A34C21D34553900C08305 /* VModaPopupAdUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 307A34C11D34553900C08305 /* VModaPopupAdUITests.swift */; };
-		307A34EB1D34695500C08305 /* PTPopupWebView.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 307A34E81D34695500C08305 /* PTPopupWebView.xcassets */; };
-		307A34EC1D34695500C08305 /* PTPopupWebView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 307A34E91D34695500C08305 /* PTPopupWebView.xib */; };
-		307A34ED1D34695500C08305 /* PTPopupWebViewControllerBlur.xib in Resources */ = {isa = PBXBuildFile; fileRef = 307A34EA1D34695500C08305 /* PTPopupWebViewControllerBlur.xib */; };
-		307A34F21D34696E00C08305 /* PTPopupWebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 307A34EE1D34696E00C08305 /* PTPopupWebView.swift */; };
-		307A34F31D34696E00C08305 /* PTPopupWebViewButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 307A34EF1D34696E00C08305 /* PTPopupWebViewButton.swift */; };
-		307A34F41D34696E00C08305 /* PTPopupWebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 307A34F01D34696E00C08305 /* PTPopupWebViewController.swift */; };
-		307A34F51D34696E00C08305 /* PTPopupWebViewStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 307A34F11D34696E00C08305 /* PTPopupWebViewStyle.swift */; };
-		309F3A0A1D4BBCE200C3314A /* InfiniteScrollingCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 309F3A081D4BBCE200C3314A /* InfiniteScrollingCell.xib */; };
+		309F3A0F1D4BDA0C00C3314A /* InfiniteScrollingPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 309F3A0D1D4BDA0C00C3314A /* InfiniteScrollingPageViewController.swift */; };
+		309F3A101D4BDA0C00C3314A /* InfiniteScrollingPageViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 309F3A0E1D4BDA0C00C3314A /* InfiniteScrollingPageViewController.xib */; };
+		309F3A121D4BE6AC00C3314A /* UIKit+Extentions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 309F3A111D4BE6AC00C3314A /* UIKit+Extentions.swift */; };
+		309F3A611D4BEB7E00C3314A /* FunctionCaps-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = 309F3A481D4BEB7D00C3314A /* FunctionCaps-Medium.otf */; };
+		309F3A621D4BEB7E00C3314A /* FunctionPro-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 309F3A491D4BEB7D00C3314A /* FunctionPro-Bold.otf */; };
+		309F3A631D4BEB7E00C3314A /* FunctionPro-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = 309F3A4A1D4BEB7D00C3314A /* FunctionPro-Light.otf */; };
+		309F3A641D4BEB7E00C3314A /* FunctionPro-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = 309F3A4B1D4BEB7D00C3314A /* FunctionPro-Medium.otf */; };
+		309F3A651D4BEB7E00C3314A /* SF-UI-Display-Black.otf in Resources */ = {isa = PBXBuildFile; fileRef = 309F3A4C1D4BEB7D00C3314A /* SF-UI-Display-Black.otf */; };
+		309F3A661D4BEB7E00C3314A /* SF-UI-Display-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 309F3A4D1D4BEB7D00C3314A /* SF-UI-Display-Bold.otf */; };
+		309F3A671D4BEB7E00C3314A /* SF-UI-Display-Heavy.otf in Resources */ = {isa = PBXBuildFile; fileRef = 309F3A4E1D4BEB7D00C3314A /* SF-UI-Display-Heavy.otf */; };
+		309F3A681D4BEB7E00C3314A /* SF-UI-Display-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = 309F3A4F1D4BEB7D00C3314A /* SF-UI-Display-Light.otf */; };
+		309F3A691D4BEB7E00C3314A /* SF-UI-Display-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = 309F3A501D4BEB7D00C3314A /* SF-UI-Display-Medium.otf */; };
+		309F3A6A1D4BEB7E00C3314A /* SF-UI-Display-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 309F3A511D4BEB7D00C3314A /* SF-UI-Display-Regular.otf */; };
+		309F3A6B1D4BEB7E00C3314A /* SF-UI-Display-Semibold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 309F3A521D4BEB7D00C3314A /* SF-UI-Display-Semibold.otf */; };
+		309F3A6C1D4BEB7E00C3314A /* SF-UI-Display-Thin.otf in Resources */ = {isa = PBXBuildFile; fileRef = 309F3A531D4BEB7E00C3314A /* SF-UI-Display-Thin.otf */; };
+		309F3A6D1D4BEB7E00C3314A /* SF-UI-Display-Ultralight.otf in Resources */ = {isa = PBXBuildFile; fileRef = 309F3A541D4BEB7E00C3314A /* SF-UI-Display-Ultralight.otf */; };
+		309F3A6E1D4BEB7E00C3314A /* SF-UI-Text-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 309F3A551D4BEB7E00C3314A /* SF-UI-Text-Bold.otf */; };
+		309F3A6F1D4BEB7E00C3314A /* SF-UI-Text-BoldItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 309F3A561D4BEB7E00C3314A /* SF-UI-Text-BoldItalic.otf */; };
+		309F3A701D4BEB7E00C3314A /* SF-UI-Text-Heavy.otf in Resources */ = {isa = PBXBuildFile; fileRef = 309F3A571D4BEB7E00C3314A /* SF-UI-Text-Heavy.otf */; };
+		309F3A711D4BEB7E00C3314A /* SF-UI-Text-HeavyItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 309F3A581D4BEB7E00C3314A /* SF-UI-Text-HeavyItalic.otf */; };
+		309F3A721D4BEB7E00C3314A /* SF-UI-Text-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = 309F3A591D4BEB7E00C3314A /* SF-UI-Text-Light.otf */; };
+		309F3A731D4BEB7E00C3314A /* SF-UI-Text-LightItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 309F3A5A1D4BEB7E00C3314A /* SF-UI-Text-LightItalic.otf */; };
+		309F3A741D4BEB7E00C3314A /* SF-UI-Text-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = 309F3A5B1D4BEB7E00C3314A /* SF-UI-Text-Medium.otf */; };
+		309F3A751D4BEB7E00C3314A /* SF-UI-Text-MediumItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 309F3A5C1D4BEB7E00C3314A /* SF-UI-Text-MediumItalic.otf */; };
+		309F3A761D4BEB7E00C3314A /* SF-UI-Text-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 309F3A5D1D4BEB7E00C3314A /* SF-UI-Text-Regular.otf */; };
+		309F3A771D4BEB7E00C3314A /* SF-UI-Text-RegularItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 309F3A5E1D4BEB7E00C3314A /* SF-UI-Text-RegularItalic.otf */; };
+		309F3A781D4BEB7E00C3314A /* SF-UI-Text-Semibold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 309F3A5F1D4BEB7E00C3314A /* SF-UI-Text-Semibold.otf */; };
+		309F3A791D4BEB7E00C3314A /* SF-UI-Text-SemiboldItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 309F3A601D4BEB7E00C3314A /* SF-UI-Text-SemiboldItalic.otf */; };
+		309F3A831D4BEC7700C3314A /* InfiniteScrollingView.h in Headers */ = {isa = PBXBuildFile; fileRef = 309F3A821D4BEC7700C3314A /* InfiniteScrollingView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		309F3A8A1D4BEC7700C3314A /* InfiniteScrollingView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 309F3A801D4BEC7700C3314A /* InfiniteScrollingView.framework */; };
+		309F3A911D4BEC7700C3314A /* InfiniteScrollingViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 309F3A901D4BEC7700C3314A /* InfiniteScrollingViewTests.swift */; };
+		309F3A951D4BEC7700C3314A /* InfiniteScrollingView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 309F3A801D4BEC7700C3314A /* InfiniteScrollingView.framework */; };
+		309F3A961D4BEC7700C3314A /* InfiniteScrollingView.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 309F3A801D4BEC7700C3314A /* InfiniteScrollingView.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		309F3A9D1D4BEC8700C3314A /* InfiniteScrollingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 303171A91D4AC8B9001D6C8F /* InfiniteScrollingView.swift */; };
+		309F3A9E1D4BEC8B00C3314A /* InfiniteScrollingCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 303171AB1D4AC8E6001D6C8F /* InfiniteScrollingCell.swift */; };
+		309F3A9F1D4BEC9100C3314A /* InfiniteScrollingCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 309F3A081D4BBCE200C3314A /* InfiniteScrollingCell.xib */; };
+		309F3AA81D4BECE500C3314A /* DJZPopupWebView.h in Headers */ = {isa = PBXBuildFile; fileRef = 309F3AA71D4BECE500C3314A /* DJZPopupWebView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		309F3AAF1D4BECE600C3314A /* DJZPopupWebView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 309F3AA51D4BECE500C3314A /* DJZPopupWebView.framework */; };
+		309F3AB61D4BECE600C3314A /* DJZPopupWebViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 309F3AB51D4BECE600C3314A /* DJZPopupWebViewTests.swift */; };
+		309F3ABA1D4BECE600C3314A /* DJZPopupWebView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 309F3AA51D4BECE500C3314A /* DJZPopupWebView.framework */; };
+		309F3ABB1D4BECE600C3314A /* DJZPopupWebView.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 309F3AA51D4BECE500C3314A /* DJZPopupWebView.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		309F3AC21D4BECEC00C3314A /* PTPopupWebViewStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 307A34F11D34696E00C08305 /* PTPopupWebViewStyle.swift */; };
+		309F3AC31D4BECF200C3314A /* PTPopupWebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 307A34F01D34696E00C08305 /* PTPopupWebViewController.swift */; };
+		309F3AC41D4BECF800C3314A /* PTPopupWebViewButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 307A34EF1D34696E00C08305 /* PTPopupWebViewButton.swift */; };
+		309F3AC51D4BECFC00C3314A /* PTPopupWebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 307A34EE1D34696E00C08305 /* PTPopupWebView.swift */; };
+		309F3AC61D4BED0100C3314A /* PTPopupWebViewControllerBlur.xib in Resources */ = {isa = PBXBuildFile; fileRef = 307A34EA1D34695500C08305 /* PTPopupWebViewControllerBlur.xib */; };
+		309F3AC71D4BED0600C3314A /* PTPopupWebView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 307A34E91D34695500C08305 /* PTPopupWebView.xib */; };
+		309F3AC81D4BED0C00C3314A /* PTPopupWebView.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 307A34E81D34695500C08305 /* PTPopupWebView.xcassets */; };
+		309F3AE31D4C196B00C3314A /* MerchScroller.h in Headers */ = {isa = PBXBuildFile; fileRef = 309F3AE21D4C196B00C3314A /* MerchScroller.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		309F3AEA1D4C196B00C3314A /* MerchScroller.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 309F3AE01D4C196B00C3314A /* MerchScroller.framework */; };
+		309F3AF11D4C196B00C3314A /* MerchScrollerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 309F3AF01D4C196B00C3314A /* MerchScrollerTests.swift */; };
+		309F3AF51D4C196B00C3314A /* MerchScroller.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 309F3AE01D4C196B00C3314A /* MerchScroller.framework */; };
+		309F3AF61D4C196B00C3314A /* MerchScroller.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 309F3AE01D4C196B00C3314A /* MerchScroller.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		309F3AFD1D4C198300C3314A /* MerchCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 309F3AD71D4BFEE900C3314A /* MerchCoordinator.swift */; };
+		309F3AFE1D4C198600C3314A /* MerchScroller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 309F3AD11D4BF44200C3314A /* MerchScroller.swift */; };
+		309F3AFF1D4C198B00C3314A /* MerchCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 309F3AD31D4BF46500C3314A /* MerchCell.swift */; };
+		309F3B001D4C199200C3314A /* MerchCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 309F3AD41D4BF46500C3314A /* MerchCell.xib */; };
 		30B6EABB1D48183A0057463A /* ImageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30B6EAB91D48183A0057463A /* ImageCell.swift */; };
 		30B6EABC1D48183A0057463A /* ImageCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 30B6EABA1D48183A0057463A /* ImageCell.xib */; };
 /* End PBXBuildFile section */
@@ -43,6 +90,69 @@
 			remoteGlobalIDString = 307A349D1D34553800C08305;
 			remoteInfo = VModaPopupAd;
 		};
+		309F3A8B1D4BEC7700C3314A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 307A34961D34553800C08305 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 309F3A7F1D4BEC7700C3314A;
+			remoteInfo = InfiniteScrollingView;
+		};
+		309F3A8D1D4BEC7700C3314A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 307A34961D34553800C08305 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 307A349D1D34553800C08305;
+			remoteInfo = VModaPopupAd;
+		};
+		309F3A931D4BEC7700C3314A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 307A34961D34553800C08305 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 309F3A7F1D4BEC7700C3314A;
+			remoteInfo = InfiniteScrollingView;
+		};
+		309F3AB01D4BECE600C3314A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 307A34961D34553800C08305 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 309F3AA41D4BECE500C3314A;
+			remoteInfo = DJZPopupWebView;
+		};
+		309F3AB21D4BECE600C3314A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 307A34961D34553800C08305 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 307A349D1D34553800C08305;
+			remoteInfo = VModaPopupAd;
+		};
+		309F3AB81D4BECE600C3314A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 307A34961D34553800C08305 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 309F3AA41D4BECE500C3314A;
+			remoteInfo = DJZPopupWebView;
+		};
+		309F3AEB1D4C196B00C3314A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 307A34961D34553800C08305 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 309F3ADF1D4C196B00C3314A;
+			remoteInfo = MerchScroller;
+		};
+		309F3AED1D4C196B00C3314A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 307A34961D34553800C08305 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 307A349D1D34553800C08305;
+			remoteInfo = VModaPopupAd;
+		};
+		309F3AF31D4C196B00C3314A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 307A34961D34553800C08305 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 309F3ADF1D4C196B00C3314A;
+			remoteInfo = MerchScroller;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -52,6 +162,9 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				309F3ABB1D4BECE600C3314A /* DJZPopupWebView.framework in Embed Frameworks */,
+				309F3AF61D4C196B00C3314A /* MerchScroller.framework in Embed Frameworks */,
+				309F3A961D4BEC7700C3314A /* InfiniteScrollingView.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -59,8 +172,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		303171A91D4AC8B9001D6C8F /* InfiniteScrollingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InfiniteScrollingView.swift; sourceTree = "<group>"; };
-		303171AB1D4AC8E6001D6C8F /* InfiniteScrollingCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InfiniteScrollingCell.swift; sourceTree = "<group>"; };
+		303171A91D4AC8B9001D6C8F /* InfiniteScrollingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = InfiniteScrollingView.swift; path = ../VModaPopupAd/InfiniteScrollingView.swift; sourceTree = "<group>"; };
+		303171AB1D4AC8E6001D6C8F /* InfiniteScrollingCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = InfiniteScrollingCell.swift; path = ../VModaPopupAd/InfiniteScrollingCell.swift; sourceTree = "<group>"; };
 		307A349E1D34553800C08305 /* VModaPopupAd.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VModaPopupAd.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		307A34A11D34553900C08305 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		307A34A31D34553900C08305 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -74,14 +187,64 @@
 		307A34BD1D34553900C08305 /* VModaPopupAdUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VModaPopupAdUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		307A34C11D34553900C08305 /* VModaPopupAdUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VModaPopupAdUITests.swift; sourceTree = "<group>"; };
 		307A34C31D34553900C08305 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		307A34E81D34695500C08305 /* PTPopupWebView.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = PTPopupWebView.xcassets; sourceTree = "<group>"; };
-		307A34E91D34695500C08305 /* PTPopupWebView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PTPopupWebView.xib; sourceTree = "<group>"; };
-		307A34EA1D34695500C08305 /* PTPopupWebViewControllerBlur.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PTPopupWebViewControllerBlur.xib; sourceTree = "<group>"; };
-		307A34EE1D34696E00C08305 /* PTPopupWebView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PTPopupWebView.swift; sourceTree = "<group>"; };
-		307A34EF1D34696E00C08305 /* PTPopupWebViewButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PTPopupWebViewButton.swift; sourceTree = "<group>"; };
-		307A34F01D34696E00C08305 /* PTPopupWebViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PTPopupWebViewController.swift; sourceTree = "<group>"; };
-		307A34F11D34696E00C08305 /* PTPopupWebViewStyle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PTPopupWebViewStyle.swift; sourceTree = "<group>"; };
-		309F3A081D4BBCE200C3314A /* InfiniteScrollingCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = InfiniteScrollingCell.xib; sourceTree = "<group>"; };
+		307A34E81D34695500C08305 /* PTPopupWebView.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = PTPopupWebView.xcassets; path = ../VModaPopupAd/PTPopupWebView.xcassets; sourceTree = "<group>"; };
+		307A34E91D34695500C08305 /* PTPopupWebView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = PTPopupWebView.xib; path = ../VModaPopupAd/PTPopupWebView.xib; sourceTree = "<group>"; };
+		307A34EA1D34695500C08305 /* PTPopupWebViewControllerBlur.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = PTPopupWebViewControllerBlur.xib; path = ../VModaPopupAd/PTPopupWebViewControllerBlur.xib; sourceTree = "<group>"; };
+		307A34EE1D34696E00C08305 /* PTPopupWebView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PTPopupWebView.swift; path = ../VModaPopupAd/PTPopupWebView.swift; sourceTree = "<group>"; };
+		307A34EF1D34696E00C08305 /* PTPopupWebViewButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PTPopupWebViewButton.swift; path = ../VModaPopupAd/PTPopupWebViewButton.swift; sourceTree = "<group>"; };
+		307A34F01D34696E00C08305 /* PTPopupWebViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PTPopupWebViewController.swift; path = ../VModaPopupAd/PTPopupWebViewController.swift; sourceTree = "<group>"; };
+		307A34F11D34696E00C08305 /* PTPopupWebViewStyle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PTPopupWebViewStyle.swift; path = ../VModaPopupAd/PTPopupWebViewStyle.swift; sourceTree = "<group>"; };
+		309F3A081D4BBCE200C3314A /* InfiniteScrollingCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = InfiniteScrollingCell.xib; path = ../VModaPopupAd/InfiniteScrollingCell.xib; sourceTree = "<group>"; };
+		309F3A0D1D4BDA0C00C3314A /* InfiniteScrollingPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InfiniteScrollingPageViewController.swift; sourceTree = "<group>"; };
+		309F3A0E1D4BDA0C00C3314A /* InfiniteScrollingPageViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = InfiniteScrollingPageViewController.xib; sourceTree = "<group>"; };
+		309F3A111D4BE6AC00C3314A /* UIKit+Extentions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIKit+Extentions.swift"; sourceTree = "<group>"; };
+		309F3A481D4BEB7D00C3314A /* FunctionCaps-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "FunctionCaps-Medium.otf"; path = "VModaPopupAd/Fonts/FunctionCaps-Medium.otf"; sourceTree = "<group>"; };
+		309F3A491D4BEB7D00C3314A /* FunctionPro-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "FunctionPro-Bold.otf"; path = "VModaPopupAd/Fonts/FunctionPro-Bold.otf"; sourceTree = "<group>"; };
+		309F3A4A1D4BEB7D00C3314A /* FunctionPro-Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "FunctionPro-Light.otf"; path = "VModaPopupAd/Fonts/FunctionPro-Light.otf"; sourceTree = "<group>"; };
+		309F3A4B1D4BEB7D00C3314A /* FunctionPro-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "FunctionPro-Medium.otf"; path = "VModaPopupAd/Fonts/FunctionPro-Medium.otf"; sourceTree = "<group>"; };
+		309F3A4C1D4BEB7D00C3314A /* SF-UI-Display-Black.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "SF-UI-Display-Black.otf"; path = "VModaPopupAd/Fonts/SF-UI-Display-Black.otf"; sourceTree = "<group>"; };
+		309F3A4D1D4BEB7D00C3314A /* SF-UI-Display-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "SF-UI-Display-Bold.otf"; path = "VModaPopupAd/Fonts/SF-UI-Display-Bold.otf"; sourceTree = "<group>"; };
+		309F3A4E1D4BEB7D00C3314A /* SF-UI-Display-Heavy.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "SF-UI-Display-Heavy.otf"; path = "VModaPopupAd/Fonts/SF-UI-Display-Heavy.otf"; sourceTree = "<group>"; };
+		309F3A4F1D4BEB7D00C3314A /* SF-UI-Display-Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "SF-UI-Display-Light.otf"; path = "VModaPopupAd/Fonts/SF-UI-Display-Light.otf"; sourceTree = "<group>"; };
+		309F3A501D4BEB7D00C3314A /* SF-UI-Display-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "SF-UI-Display-Medium.otf"; path = "VModaPopupAd/Fonts/SF-UI-Display-Medium.otf"; sourceTree = "<group>"; };
+		309F3A511D4BEB7D00C3314A /* SF-UI-Display-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "SF-UI-Display-Regular.otf"; path = "VModaPopupAd/Fonts/SF-UI-Display-Regular.otf"; sourceTree = "<group>"; };
+		309F3A521D4BEB7D00C3314A /* SF-UI-Display-Semibold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "SF-UI-Display-Semibold.otf"; path = "VModaPopupAd/Fonts/SF-UI-Display-Semibold.otf"; sourceTree = "<group>"; };
+		309F3A531D4BEB7E00C3314A /* SF-UI-Display-Thin.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "SF-UI-Display-Thin.otf"; path = "VModaPopupAd/Fonts/SF-UI-Display-Thin.otf"; sourceTree = "<group>"; };
+		309F3A541D4BEB7E00C3314A /* SF-UI-Display-Ultralight.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "SF-UI-Display-Ultralight.otf"; path = "VModaPopupAd/Fonts/SF-UI-Display-Ultralight.otf"; sourceTree = "<group>"; };
+		309F3A551D4BEB7E00C3314A /* SF-UI-Text-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "SF-UI-Text-Bold.otf"; path = "VModaPopupAd/Fonts/SF-UI-Text-Bold.otf"; sourceTree = "<group>"; };
+		309F3A561D4BEB7E00C3314A /* SF-UI-Text-BoldItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "SF-UI-Text-BoldItalic.otf"; path = "VModaPopupAd/Fonts/SF-UI-Text-BoldItalic.otf"; sourceTree = "<group>"; };
+		309F3A571D4BEB7E00C3314A /* SF-UI-Text-Heavy.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "SF-UI-Text-Heavy.otf"; path = "VModaPopupAd/Fonts/SF-UI-Text-Heavy.otf"; sourceTree = "<group>"; };
+		309F3A581D4BEB7E00C3314A /* SF-UI-Text-HeavyItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "SF-UI-Text-HeavyItalic.otf"; path = "VModaPopupAd/Fonts/SF-UI-Text-HeavyItalic.otf"; sourceTree = "<group>"; };
+		309F3A591D4BEB7E00C3314A /* SF-UI-Text-Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "SF-UI-Text-Light.otf"; path = "VModaPopupAd/Fonts/SF-UI-Text-Light.otf"; sourceTree = "<group>"; };
+		309F3A5A1D4BEB7E00C3314A /* SF-UI-Text-LightItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "SF-UI-Text-LightItalic.otf"; path = "VModaPopupAd/Fonts/SF-UI-Text-LightItalic.otf"; sourceTree = "<group>"; };
+		309F3A5B1D4BEB7E00C3314A /* SF-UI-Text-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "SF-UI-Text-Medium.otf"; path = "VModaPopupAd/Fonts/SF-UI-Text-Medium.otf"; sourceTree = "<group>"; };
+		309F3A5C1D4BEB7E00C3314A /* SF-UI-Text-MediumItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "SF-UI-Text-MediumItalic.otf"; path = "VModaPopupAd/Fonts/SF-UI-Text-MediumItalic.otf"; sourceTree = "<group>"; };
+		309F3A5D1D4BEB7E00C3314A /* SF-UI-Text-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "SF-UI-Text-Regular.otf"; path = "VModaPopupAd/Fonts/SF-UI-Text-Regular.otf"; sourceTree = "<group>"; };
+		309F3A5E1D4BEB7E00C3314A /* SF-UI-Text-RegularItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "SF-UI-Text-RegularItalic.otf"; path = "VModaPopupAd/Fonts/SF-UI-Text-RegularItalic.otf"; sourceTree = "<group>"; };
+		309F3A5F1D4BEB7E00C3314A /* SF-UI-Text-Semibold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "SF-UI-Text-Semibold.otf"; path = "VModaPopupAd/Fonts/SF-UI-Text-Semibold.otf"; sourceTree = "<group>"; };
+		309F3A601D4BEB7E00C3314A /* SF-UI-Text-SemiboldItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "SF-UI-Text-SemiboldItalic.otf"; path = "VModaPopupAd/Fonts/SF-UI-Text-SemiboldItalic.otf"; sourceTree = "<group>"; };
+		309F3A801D4BEC7700C3314A /* InfiniteScrollingView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = InfiniteScrollingView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		309F3A821D4BEC7700C3314A /* InfiniteScrollingView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InfiniteScrollingView.h; sourceTree = "<group>"; };
+		309F3A841D4BEC7700C3314A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		309F3A891D4BEC7700C3314A /* InfiniteScrollingViewTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = InfiniteScrollingViewTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		309F3A901D4BEC7700C3314A /* InfiniteScrollingViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfiniteScrollingViewTests.swift; sourceTree = "<group>"; };
+		309F3A921D4BEC7700C3314A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		309F3AA51D4BECE500C3314A /* DJZPopupWebView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DJZPopupWebView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		309F3AA71D4BECE500C3314A /* DJZPopupWebView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DJZPopupWebView.h; sourceTree = "<group>"; };
+		309F3AA91D4BECE500C3314A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		309F3AAE1D4BECE600C3314A /* DJZPopupWebViewTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DJZPopupWebViewTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		309F3AB51D4BECE600C3314A /* DJZPopupWebViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DJZPopupWebViewTests.swift; sourceTree = "<group>"; };
+		309F3AB71D4BECE600C3314A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		309F3AD11D4BF44200C3314A /* MerchScroller.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MerchScroller.swift; path = ../VModaPopupAd/MerchScroller.swift; sourceTree = "<group>"; };
+		309F3AD31D4BF46500C3314A /* MerchCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MerchCell.swift; path = ../VModaPopupAd/MerchCell.swift; sourceTree = "<group>"; };
+		309F3AD41D4BF46500C3314A /* MerchCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = MerchCell.xib; path = ../VModaPopupAd/MerchCell.xib; sourceTree = "<group>"; };
+		309F3AD71D4BFEE900C3314A /* MerchCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MerchCoordinator.swift; path = ../VModaPopupAd/MerchCoordinator.swift; sourceTree = "<group>"; };
+		309F3AE01D4C196B00C3314A /* MerchScroller.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MerchScroller.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		309F3AE21D4C196B00C3314A /* MerchScroller.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MerchScroller.h; sourceTree = "<group>"; };
+		309F3AE41D4C196B00C3314A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		309F3AE91D4C196B00C3314A /* MerchScrollerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MerchScrollerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		309F3AF01D4C196B00C3314A /* MerchScrollerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MerchScrollerTests.swift; sourceTree = "<group>"; };
+		309F3AF21D4C196B00C3314A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		30B6EAB91D48183A0057463A /* ImageCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageCell.swift; sourceTree = "<group>"; };
 		30B6EABA1D48183A0057463A /* ImageCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ImageCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -91,6 +254,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				309F3ABA1D4BECE600C3314A /* DJZPopupWebView.framework in Frameworks */,
+				309F3AF51D4C196B00C3314A /* MerchScroller.framework in Frameworks */,
+				309F3A951D4BEC7700C3314A /* InfiniteScrollingView.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -108,15 +274,67 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		309F3A7C1D4BEC7700C3314A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		309F3A861D4BEC7700C3314A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				309F3A8A1D4BEC7700C3314A /* InfiniteScrollingView.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		309F3AA11D4BECE500C3314A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		309F3AAB1D4BECE600C3314A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				309F3AAF1D4BECE600C3314A /* DJZPopupWebView.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		309F3ADC1D4C196B00C3314A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		309F3AE61D4C196B00C3314A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				309F3AEA1D4C196B00C3314A /* MerchScroller.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
 		307A34951D34553800C08305 = {
 			isa = PBXGroup;
 			children = (
+				309F3A7A1D4BEB8700C3314A /* Fonts */,
 				307A34A01D34553900C08305 /* VModaPopupAd */,
 				307A34B51D34553900C08305 /* VModaPopupAdTests */,
 				307A34C01D34553900C08305 /* VModaPopupAdUITests */,
+				309F3A811D4BEC7700C3314A /* InfiniteScrollingView */,
+				309F3A8F1D4BEC7700C3314A /* InfiniteScrollingViewTests */,
+				309F3AA61D4BECE500C3314A /* DJZPopupWebView */,
+				309F3AB41D4BECE600C3314A /* DJZPopupWebViewTests */,
+				309F3AE11D4C196B00C3314A /* MerchScroller */,
+				309F3AEF1D4C196B00C3314A /* MerchScrollerTests */,
 				307A349F1D34553800C08305 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -127,6 +345,12 @@
 				307A349E1D34553800C08305 /* VModaPopupAd.app */,
 				307A34B21D34553900C08305 /* VModaPopupAdTests.xctest */,
 				307A34BD1D34553900C08305 /* VModaPopupAdUITests.xctest */,
+				309F3A801D4BEC7700C3314A /* InfiniteScrollingView.framework */,
+				309F3A891D4BEC7700C3314A /* InfiniteScrollingViewTests.xctest */,
+				309F3AA51D4BECE500C3314A /* DJZPopupWebView.framework */,
+				309F3AAE1D4BECE600C3314A /* DJZPopupWebViewTests.xctest */,
+				309F3AE01D4C196B00C3314A /* MerchScroller.framework */,
+				309F3AE91D4C196B00C3314A /* MerchScrollerTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -142,16 +366,9 @@
 				307A34A81D34553900C08305 /* Assets.xcassets */,
 				307A34AA1D34553900C08305 /* LaunchScreen.storyboard */,
 				307A34AD1D34553900C08305 /* Info.plist */,
-				307A34E81D34695500C08305 /* PTPopupWebView.xcassets */,
-				307A34E91D34695500C08305 /* PTPopupWebView.xib */,
-				307A34EA1D34695500C08305 /* PTPopupWebViewControllerBlur.xib */,
-				307A34EE1D34696E00C08305 /* PTPopupWebView.swift */,
-				307A34EF1D34696E00C08305 /* PTPopupWebViewButton.swift */,
-				307A34F01D34696E00C08305 /* PTPopupWebViewController.swift */,
-				307A34F11D34696E00C08305 /* PTPopupWebViewStyle.swift */,
-				303171A91D4AC8B9001D6C8F /* InfiniteScrollingView.swift */,
-				303171AB1D4AC8E6001D6C8F /* InfiniteScrollingCell.swift */,
-				309F3A081D4BBCE200C3314A /* InfiniteScrollingCell.xib */,
+				309F3A0D1D4BDA0C00C3314A /* InfiniteScrollingPageViewController.swift */,
+				309F3A0E1D4BDA0C00C3314A /* InfiniteScrollingPageViewController.xib */,
+				309F3A111D4BE6AC00C3314A /* UIKit+Extentions.swift */,
 			);
 			path = VModaPopupAd;
 			sourceTree = "<group>";
@@ -174,7 +391,134 @@
 			path = VModaPopupAdUITests;
 			sourceTree = "<group>";
 		};
+		309F3A7A1D4BEB8700C3314A /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				309F3A481D4BEB7D00C3314A /* FunctionCaps-Medium.otf */,
+				309F3A491D4BEB7D00C3314A /* FunctionPro-Bold.otf */,
+				309F3A4A1D4BEB7D00C3314A /* FunctionPro-Light.otf */,
+				309F3A4B1D4BEB7D00C3314A /* FunctionPro-Medium.otf */,
+				309F3A4C1D4BEB7D00C3314A /* SF-UI-Display-Black.otf */,
+				309F3A4D1D4BEB7D00C3314A /* SF-UI-Display-Bold.otf */,
+				309F3A4E1D4BEB7D00C3314A /* SF-UI-Display-Heavy.otf */,
+				309F3A4F1D4BEB7D00C3314A /* SF-UI-Display-Light.otf */,
+				309F3A501D4BEB7D00C3314A /* SF-UI-Display-Medium.otf */,
+				309F3A511D4BEB7D00C3314A /* SF-UI-Display-Regular.otf */,
+				309F3A521D4BEB7D00C3314A /* SF-UI-Display-Semibold.otf */,
+				309F3A531D4BEB7E00C3314A /* SF-UI-Display-Thin.otf */,
+				309F3A541D4BEB7E00C3314A /* SF-UI-Display-Ultralight.otf */,
+				309F3A551D4BEB7E00C3314A /* SF-UI-Text-Bold.otf */,
+				309F3A561D4BEB7E00C3314A /* SF-UI-Text-BoldItalic.otf */,
+				309F3A571D4BEB7E00C3314A /* SF-UI-Text-Heavy.otf */,
+				309F3A581D4BEB7E00C3314A /* SF-UI-Text-HeavyItalic.otf */,
+				309F3A591D4BEB7E00C3314A /* SF-UI-Text-Light.otf */,
+				309F3A5A1D4BEB7E00C3314A /* SF-UI-Text-LightItalic.otf */,
+				309F3A5B1D4BEB7E00C3314A /* SF-UI-Text-Medium.otf */,
+				309F3A5C1D4BEB7E00C3314A /* SF-UI-Text-MediumItalic.otf */,
+				309F3A5D1D4BEB7E00C3314A /* SF-UI-Text-Regular.otf */,
+				309F3A5E1D4BEB7E00C3314A /* SF-UI-Text-RegularItalic.otf */,
+				309F3A5F1D4BEB7E00C3314A /* SF-UI-Text-Semibold.otf */,
+				309F3A601D4BEB7E00C3314A /* SF-UI-Text-SemiboldItalic.otf */,
+			);
+			name = Fonts;
+			sourceTree = "<group>";
+		};
+		309F3A811D4BEC7700C3314A /* InfiniteScrollingView */ = {
+			isa = PBXGroup;
+			children = (
+				303171A91D4AC8B9001D6C8F /* InfiniteScrollingView.swift */,
+				303171AB1D4AC8E6001D6C8F /* InfiniteScrollingCell.swift */,
+				309F3A081D4BBCE200C3314A /* InfiniteScrollingCell.xib */,
+				309F3A821D4BEC7700C3314A /* InfiniteScrollingView.h */,
+				309F3A841D4BEC7700C3314A /* Info.plist */,
+			);
+			path = InfiniteScrollingView;
+			sourceTree = "<group>";
+		};
+		309F3A8F1D4BEC7700C3314A /* InfiniteScrollingViewTests */ = {
+			isa = PBXGroup;
+			children = (
+				309F3A901D4BEC7700C3314A /* InfiniteScrollingViewTests.swift */,
+				309F3A921D4BEC7700C3314A /* Info.plist */,
+			);
+			path = InfiniteScrollingViewTests;
+			sourceTree = "<group>";
+		};
+		309F3AA61D4BECE500C3314A /* DJZPopupWebView */ = {
+			isa = PBXGroup;
+			children = (
+				307A34E81D34695500C08305 /* PTPopupWebView.xcassets */,
+				307A34E91D34695500C08305 /* PTPopupWebView.xib */,
+				307A34EA1D34695500C08305 /* PTPopupWebViewControllerBlur.xib */,
+				307A34EE1D34696E00C08305 /* PTPopupWebView.swift */,
+				307A34EF1D34696E00C08305 /* PTPopupWebViewButton.swift */,
+				307A34F01D34696E00C08305 /* PTPopupWebViewController.swift */,
+				307A34F11D34696E00C08305 /* PTPopupWebViewStyle.swift */,
+				309F3AA71D4BECE500C3314A /* DJZPopupWebView.h */,
+				309F3AA91D4BECE500C3314A /* Info.plist */,
+			);
+			path = DJZPopupWebView;
+			sourceTree = "<group>";
+		};
+		309F3AB41D4BECE600C3314A /* DJZPopupWebViewTests */ = {
+			isa = PBXGroup;
+			children = (
+				309F3AB51D4BECE600C3314A /* DJZPopupWebViewTests.swift */,
+				309F3AB71D4BECE600C3314A /* Info.plist */,
+			);
+			path = DJZPopupWebViewTests;
+			sourceTree = "<group>";
+		};
+		309F3AE11D4C196B00C3314A /* MerchScroller */ = {
+			isa = PBXGroup;
+			children = (
+				309F3AD71D4BFEE900C3314A /* MerchCoordinator.swift */,
+				309F3AD11D4BF44200C3314A /* MerchScroller.swift */,
+				309F3AD31D4BF46500C3314A /* MerchCell.swift */,
+				309F3AD41D4BF46500C3314A /* MerchCell.xib */,
+				309F3AE21D4C196B00C3314A /* MerchScroller.h */,
+				309F3AE41D4C196B00C3314A /* Info.plist */,
+			);
+			path = MerchScroller;
+			sourceTree = "<group>";
+		};
+		309F3AEF1D4C196B00C3314A /* MerchScrollerTests */ = {
+			isa = PBXGroup;
+			children = (
+				309F3AF01D4C196B00C3314A /* MerchScrollerTests.swift */,
+				309F3AF21D4C196B00C3314A /* Info.plist */,
+			);
+			path = MerchScrollerTests;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		309F3A7D1D4BEC7700C3314A /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				309F3AE31D4C196B00C3314A /* MerchScroller.h in Headers */,
+				309F3AA81D4BECE500C3314A /* DJZPopupWebView.h in Headers */,
+				309F3A831D4BEC7700C3314A /* InfiniteScrollingView.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		309F3AA21D4BECE500C3314A /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		309F3ADD1D4C196B00C3314A /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
 		307A349D1D34553800C08305 /* VModaPopupAd */ = {
@@ -189,6 +533,9 @@
 			buildRules = (
 			);
 			dependencies = (
+				309F3A941D4BEC7700C3314A /* PBXTargetDependency */,
+				309F3AB91D4BECE600C3314A /* PBXTargetDependency */,
+				309F3AF41D4C196B00C3314A /* PBXTargetDependency */,
 			);
 			name = VModaPopupAd;
 			productName = VModaPopupAd;
@@ -231,6 +578,117 @@
 			productReference = 307A34BD1D34553900C08305 /* VModaPopupAdUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		309F3A7F1D4BEC7700C3314A /* InfiniteScrollingView */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 309F3A971D4BEC7700C3314A /* Build configuration list for PBXNativeTarget "InfiniteScrollingView" */;
+			buildPhases = (
+				309F3A7B1D4BEC7700C3314A /* Sources */,
+				309F3A7C1D4BEC7700C3314A /* Frameworks */,
+				309F3A7D1D4BEC7700C3314A /* Headers */,
+				309F3A7E1D4BEC7700C3314A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = InfiniteScrollingView;
+			productName = InfiniteScrollingView;
+			productReference = 309F3A801D4BEC7700C3314A /* InfiniteScrollingView.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		309F3A881D4BEC7700C3314A /* InfiniteScrollingViewTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 309F3A9A1D4BEC7700C3314A /* Build configuration list for PBXNativeTarget "InfiniteScrollingViewTests" */;
+			buildPhases = (
+				309F3A851D4BEC7700C3314A /* Sources */,
+				309F3A861D4BEC7700C3314A /* Frameworks */,
+				309F3A871D4BEC7700C3314A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				309F3A8C1D4BEC7700C3314A /* PBXTargetDependency */,
+				309F3A8E1D4BEC7700C3314A /* PBXTargetDependency */,
+			);
+			name = InfiniteScrollingViewTests;
+			productName = InfiniteScrollingViewTests;
+			productReference = 309F3A891D4BEC7700C3314A /* InfiniteScrollingViewTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		309F3AA41D4BECE500C3314A /* DJZPopupWebView */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 309F3ABC1D4BECE600C3314A /* Build configuration list for PBXNativeTarget "DJZPopupWebView" */;
+			buildPhases = (
+				309F3AA01D4BECE500C3314A /* Sources */,
+				309F3AA11D4BECE500C3314A /* Frameworks */,
+				309F3AA21D4BECE500C3314A /* Headers */,
+				309F3AA31D4BECE500C3314A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DJZPopupWebView;
+			productName = DJZPopupWebView;
+			productReference = 309F3AA51D4BECE500C3314A /* DJZPopupWebView.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		309F3AAD1D4BECE600C3314A /* DJZPopupWebViewTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 309F3ABF1D4BECE600C3314A /* Build configuration list for PBXNativeTarget "DJZPopupWebViewTests" */;
+			buildPhases = (
+				309F3AAA1D4BECE600C3314A /* Sources */,
+				309F3AAB1D4BECE600C3314A /* Frameworks */,
+				309F3AAC1D4BECE600C3314A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				309F3AB11D4BECE600C3314A /* PBXTargetDependency */,
+				309F3AB31D4BECE600C3314A /* PBXTargetDependency */,
+			);
+			name = DJZPopupWebViewTests;
+			productName = DJZPopupWebViewTests;
+			productReference = 309F3AAE1D4BECE600C3314A /* DJZPopupWebViewTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		309F3ADF1D4C196B00C3314A /* MerchScroller */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 309F3AF71D4C196B00C3314A /* Build configuration list for PBXNativeTarget "MerchScroller" */;
+			buildPhases = (
+				309F3ADB1D4C196B00C3314A /* Sources */,
+				309F3ADC1D4C196B00C3314A /* Frameworks */,
+				309F3ADD1D4C196B00C3314A /* Headers */,
+				309F3ADE1D4C196B00C3314A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MerchScroller;
+			productName = MerchScroller;
+			productReference = 309F3AE01D4C196B00C3314A /* MerchScroller.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		309F3AE81D4C196B00C3314A /* MerchScrollerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 309F3AFA1D4C196B00C3314A /* Build configuration list for PBXNativeTarget "MerchScrollerTests" */;
+			buildPhases = (
+				309F3AE51D4C196B00C3314A /* Sources */,
+				309F3AE61D4C196B00C3314A /* Frameworks */,
+				309F3AE71D4C196B00C3314A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				309F3AEC1D4C196B00C3314A /* PBXTargetDependency */,
+				309F3AEE1D4C196B00C3314A /* PBXTargetDependency */,
+			);
+			name = MerchScrollerTests;
+			productName = MerchScrollerTests;
+			productReference = 309F3AE91D4C196B00C3314A /* MerchScrollerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -252,6 +710,27 @@
 						CreatedOnToolsVersion = 7.3.1;
 						TestTargetID = 307A349D1D34553800C08305;
 					};
+					309F3A7F1D4BEC7700C3314A = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+					309F3A881D4BEC7700C3314A = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = 307A349D1D34553800C08305;
+					};
+					309F3AA41D4BECE500C3314A = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+					309F3AAD1D4BECE600C3314A = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = 307A349D1D34553800C08305;
+					};
+					309F3ADF1D4C196B00C3314A = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+					309F3AE81D4C196B00C3314A = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = 307A349D1D34553800C08305;
+					};
 				};
 			};
 			buildConfigurationList = 307A34991D34553800C08305 /* Build configuration list for PBXProject "VModaPopupAd" */;
@@ -270,6 +749,12 @@
 				307A349D1D34553800C08305 /* VModaPopupAd */,
 				307A34B11D34553900C08305 /* VModaPopupAdTests */,
 				307A34BC1D34553900C08305 /* VModaPopupAdUITests */,
+				309F3A7F1D4BEC7700C3314A /* InfiniteScrollingView */,
+				309F3A881D4BEC7700C3314A /* InfiniteScrollingViewTests */,
+				309F3AA41D4BECE500C3314A /* DJZPopupWebView */,
+				309F3AAD1D4BECE600C3314A /* DJZPopupWebViewTests */,
+				309F3ADF1D4C196B00C3314A /* MerchScroller */,
+				309F3AE81D4C196B00C3314A /* MerchScrollerTests */,
 			);
 		};
 /* End PBXProject section */
@@ -279,13 +764,35 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				307A34EB1D34695500C08305 /* PTPopupWebView.xcassets in Resources */,
+				309F3A611D4BEB7E00C3314A /* FunctionCaps-Medium.otf in Resources */,
+				309F3A621D4BEB7E00C3314A /* FunctionPro-Bold.otf in Resources */,
+				309F3A631D4BEB7E00C3314A /* FunctionPro-Light.otf in Resources */,
+				309F3A641D4BEB7E00C3314A /* FunctionPro-Medium.otf in Resources */,
+				309F3A651D4BEB7E00C3314A /* SF-UI-Display-Black.otf in Resources */,
+				309F3A661D4BEB7E00C3314A /* SF-UI-Display-Bold.otf in Resources */,
+				309F3A671D4BEB7E00C3314A /* SF-UI-Display-Heavy.otf in Resources */,
+				309F3A681D4BEB7E00C3314A /* SF-UI-Display-Light.otf in Resources */,
+				309F3A691D4BEB7E00C3314A /* SF-UI-Display-Medium.otf in Resources */,
+				309F3A6A1D4BEB7E00C3314A /* SF-UI-Display-Regular.otf in Resources */,
+				309F3A6B1D4BEB7E00C3314A /* SF-UI-Display-Semibold.otf in Resources */,
+				309F3A6C1D4BEB7E00C3314A /* SF-UI-Display-Thin.otf in Resources */,
+				309F3A6D1D4BEB7E00C3314A /* SF-UI-Display-Ultralight.otf in Resources */,
+				309F3A6E1D4BEB7E00C3314A /* SF-UI-Text-Bold.otf in Resources */,
+				309F3A6F1D4BEB7E00C3314A /* SF-UI-Text-BoldItalic.otf in Resources */,
+				309F3A701D4BEB7E00C3314A /* SF-UI-Text-Heavy.otf in Resources */,
+				309F3A711D4BEB7E00C3314A /* SF-UI-Text-HeavyItalic.otf in Resources */,
+				309F3A721D4BEB7E00C3314A /* SF-UI-Text-Light.otf in Resources */,
+				309F3A731D4BEB7E00C3314A /* SF-UI-Text-LightItalic.otf in Resources */,
+				309F3A741D4BEB7E00C3314A /* SF-UI-Text-Medium.otf in Resources */,
+				309F3A751D4BEB7E00C3314A /* SF-UI-Text-MediumItalic.otf in Resources */,
+				309F3A761D4BEB7E00C3314A /* SF-UI-Text-Regular.otf in Resources */,
+				309F3A771D4BEB7E00C3314A /* SF-UI-Text-RegularItalic.otf in Resources */,
+				309F3A781D4BEB7E00C3314A /* SF-UI-Text-Semibold.otf in Resources */,
+				309F3A791D4BEB7E00C3314A /* SF-UI-Text-SemiboldItalic.otf in Resources */,
+				309F3A101D4BDA0C00C3314A /* InfiniteScrollingPageViewController.xib in Resources */,
 				307A34AC1D34553900C08305 /* LaunchScreen.storyboard in Resources */,
 				30B6EABC1D48183A0057463A /* ImageCell.xib in Resources */,
-				307A34EC1D34695500C08305 /* PTPopupWebView.xib in Resources */,
 				307A34A91D34553900C08305 /* Assets.xcassets in Resources */,
-				307A34ED1D34695500C08305 /* PTPopupWebViewControllerBlur.xib in Resources */,
-				309F3A0A1D4BBCE200C3314A /* InfiniteScrollingCell.xib in Resources */,
 				307A34A71D34553900C08305 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -304,6 +811,53 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		309F3A7E1D4BEC7700C3314A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				309F3A9F1D4BEC9100C3314A /* InfiniteScrollingCell.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		309F3A871D4BEC7700C3314A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		309F3AA31D4BECE500C3314A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				309F3AC81D4BED0C00C3314A /* PTPopupWebView.xcassets in Resources */,
+				309F3AC71D4BED0600C3314A /* PTPopupWebView.xib in Resources */,
+				309F3AC61D4BED0100C3314A /* PTPopupWebViewControllerBlur.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		309F3AAC1D4BECE600C3314A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		309F3ADE1D4C196B00C3314A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				309F3B001D4C199200C3314A /* MerchCell.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		309F3AE71D4C196B00C3314A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -313,13 +867,9 @@
 			files = (
 				307A34A41D34553900C08305 /* ViewController.swift in Sources */,
 				30B6EABB1D48183A0057463A /* ImageCell.swift in Sources */,
-				303171AA1D4AC8B9001D6C8F /* InfiniteScrollingView.swift in Sources */,
-				307A34F21D34696E00C08305 /* PTPopupWebView.swift in Sources */,
-				307A34F51D34696E00C08305 /* PTPopupWebViewStyle.swift in Sources */,
-				303171AC1D4AC8E6001D6C8F /* InfiniteScrollingCell.swift in Sources */,
-				307A34F31D34696E00C08305 /* PTPopupWebViewButton.swift in Sources */,
+				309F3A121D4BE6AC00C3314A /* UIKit+Extentions.swift in Sources */,
+				309F3A0F1D4BDA0C00C3314A /* InfiniteScrollingPageViewController.swift in Sources */,
 				307A34A21D34553900C08305 /* AppDelegate.swift in Sources */,
-				307A34F41D34696E00C08305 /* PTPopupWebViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -339,6 +889,60 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		309F3A7B1D4BEC7700C3314A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				309F3A9D1D4BEC8700C3314A /* InfiniteScrollingView.swift in Sources */,
+				309F3A9E1D4BEC8B00C3314A /* InfiniteScrollingCell.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		309F3A851D4BEC7700C3314A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				309F3A911D4BEC7700C3314A /* InfiniteScrollingViewTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		309F3AA01D4BECE500C3314A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				309F3AC51D4BECFC00C3314A /* PTPopupWebView.swift in Sources */,
+				309F3AC31D4BECF200C3314A /* PTPopupWebViewController.swift in Sources */,
+				309F3AC41D4BECF800C3314A /* PTPopupWebViewButton.swift in Sources */,
+				309F3AC21D4BECEC00C3314A /* PTPopupWebViewStyle.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		309F3AAA1D4BECE600C3314A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				309F3AB61D4BECE600C3314A /* DJZPopupWebViewTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		309F3ADB1D4C196B00C3314A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				309F3AFD1D4C198300C3314A /* MerchCoordinator.swift in Sources */,
+				309F3AFF1D4C198B00C3314A /* MerchCell.swift in Sources */,
+				309F3AFE1D4C198600C3314A /* MerchScroller.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		309F3AE51D4C196B00C3314A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				309F3AF11D4C196B00C3314A /* MerchScrollerTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -351,6 +955,51 @@
 			isa = PBXTargetDependency;
 			target = 307A349D1D34553800C08305 /* VModaPopupAd */;
 			targetProxy = 307A34BE1D34553900C08305 /* PBXContainerItemProxy */;
+		};
+		309F3A8C1D4BEC7700C3314A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 309F3A7F1D4BEC7700C3314A /* InfiniteScrollingView */;
+			targetProxy = 309F3A8B1D4BEC7700C3314A /* PBXContainerItemProxy */;
+		};
+		309F3A8E1D4BEC7700C3314A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 307A349D1D34553800C08305 /* VModaPopupAd */;
+			targetProxy = 309F3A8D1D4BEC7700C3314A /* PBXContainerItemProxy */;
+		};
+		309F3A941D4BEC7700C3314A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 309F3A7F1D4BEC7700C3314A /* InfiniteScrollingView */;
+			targetProxy = 309F3A931D4BEC7700C3314A /* PBXContainerItemProxy */;
+		};
+		309F3AB11D4BECE600C3314A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 309F3AA41D4BECE500C3314A /* DJZPopupWebView */;
+			targetProxy = 309F3AB01D4BECE600C3314A /* PBXContainerItemProxy */;
+		};
+		309F3AB31D4BECE600C3314A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 307A349D1D34553800C08305 /* VModaPopupAd */;
+			targetProxy = 309F3AB21D4BECE600C3314A /* PBXContainerItemProxy */;
+		};
+		309F3AB91D4BECE600C3314A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 309F3AA41D4BECE500C3314A /* DJZPopupWebView */;
+			targetProxy = 309F3AB81D4BECE600C3314A /* PBXContainerItemProxy */;
+		};
+		309F3AEC1D4C196B00C3314A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 309F3ADF1D4C196B00C3314A /* MerchScroller */;
+			targetProxy = 309F3AEB1D4C196B00C3314A /* PBXContainerItemProxy */;
+		};
+		309F3AEE1D4C196B00C3314A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 307A349D1D34553800C08305 /* VModaPopupAd */;
+			targetProxy = 309F3AED1D4C196B00C3314A /* PBXContainerItemProxy */;
+		};
+		309F3AF41D4C196B00C3314A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 309F3ADF1D4C196B00C3314A /* MerchScroller */;
+			targetProxy = 309F3AF31D4C196B00C3314A /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -463,11 +1112,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = VModaPopupAd/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.rchatham.VModaPopupAd;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -478,11 +1129,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = VModaPopupAd/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.rchatham.VModaPopupAd;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -535,6 +1188,192 @@
 			};
 			name = Release;
 		};
+		309F3A981D4BEC7700C3314A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = InfiniteScrollingView/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.djz.InfiniteScrollingView;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		309F3A991D4BEC7700C3314A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = InfiniteScrollingView/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.djz.InfiniteScrollingView;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		309F3A9B1D4BEC7700C3314A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = InfiniteScrollingViewTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.djz.InfiniteScrollingViewTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/VModaPopupAd.app/VModaPopupAd";
+			};
+			name = Debug;
+		};
+		309F3A9C1D4BEC7700C3314A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = InfiniteScrollingViewTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.djz.InfiniteScrollingViewTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/VModaPopupAd.app/VModaPopupAd";
+			};
+			name = Release;
+		};
+		309F3ABD1D4BECE600C3314A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = DJZPopupWebView/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.djz.DJZPopupWebView;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		309F3ABE1D4BECE600C3314A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = DJZPopupWebView/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.djz.DJZPopupWebView;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		309F3AC01D4BECE600C3314A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = DJZPopupWebViewTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.djz.DJZPopupWebViewTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/VModaPopupAd.app/VModaPopupAd";
+			};
+			name = Debug;
+		};
+		309F3AC11D4BECE600C3314A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = DJZPopupWebViewTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.djz.DJZPopupWebViewTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/VModaPopupAd.app/VModaPopupAd";
+			};
+			name = Release;
+		};
+		309F3AF81D4C196B00C3314A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = MerchScroller/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.djz.MerchScroller;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		309F3AF91D4C196B00C3314A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = MerchScroller/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.djz.MerchScroller;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		309F3AFB1D4C196B00C3314A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = MerchScrollerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.djz.MerchScrollerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/VModaPopupAd.app/VModaPopupAd";
+			};
+			name = Debug;
+		};
+		309F3AFC1D4C196B00C3314A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = MerchScrollerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.djz.MerchScrollerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/VModaPopupAd.app/VModaPopupAd";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -570,6 +1409,60 @@
 			buildConfigurations = (
 				307A34CD1D34553900C08305 /* Debug */,
 				307A34CE1D34553900C08305 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		309F3A971D4BEC7700C3314A /* Build configuration list for PBXNativeTarget "InfiniteScrollingView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				309F3A981D4BEC7700C3314A /* Debug */,
+				309F3A991D4BEC7700C3314A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		309F3A9A1D4BEC7700C3314A /* Build configuration list for PBXNativeTarget "InfiniteScrollingViewTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				309F3A9B1D4BEC7700C3314A /* Debug */,
+				309F3A9C1D4BEC7700C3314A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		309F3ABC1D4BECE600C3314A /* Build configuration list for PBXNativeTarget "DJZPopupWebView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				309F3ABD1D4BECE600C3314A /* Debug */,
+				309F3ABE1D4BECE600C3314A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		309F3ABF1D4BECE600C3314A /* Build configuration list for PBXNativeTarget "DJZPopupWebViewTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				309F3AC01D4BECE600C3314A /* Debug */,
+				309F3AC11D4BECE600C3314A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		309F3AF71D4C196B00C3314A /* Build configuration list for PBXNativeTarget "MerchScroller" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				309F3AF81D4C196B00C3314A /* Debug */,
+				309F3AF91D4C196B00C3314A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		309F3AFA1D4C196B00C3314A /* Build configuration list for PBXNativeTarget "MerchScrollerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				309F3AFB1D4C196B00C3314A /* Debug */,
+				309F3AFC1D4C196B00C3314A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

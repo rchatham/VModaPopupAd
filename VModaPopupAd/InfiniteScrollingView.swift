@@ -15,12 +15,11 @@ public protocol InfiniteScrollingViewDelegate: class {
 public class InfiniteScrollingView: UICollectionView {
     
     weak public var infiniteScrollViewDelegate: InfiniteScrollingViewDelegate?
-    
-    public init(frame: CGRect, useSampleData: Bool = false) {
-        super.init(frame: frame, collectionViewLayout: UICollectionViewFlowLayout())
-        if useSampleData { setPhotoURLs(["merch-1","merch-2","merch-3","merch-4"]) }
-        setup()
-    }
+//    
+//    public init(frame: CGRect) {
+//        super.init(frame: frame, collectionViewLayout: UICollectionViewFlowLayout())
+//        setup()
+//    }
     
     public init(frame: CGRect, photoURLs: [String]) {
         super.init(frame: frame, collectionViewLayout: UICollectionViewFlowLayout())
@@ -63,7 +62,7 @@ public class InfiniteScrollingView: UICollectionView {
 //        layout.minimumLineSpacing = 0
 //        layout.minimumInteritemSpacing = 0
         
-        let nib = UINib(nibName: String(InfiniteScrollingCell), bundle: nil)
+        let nib = UINib(nibName: String(InfiniteScrollingCell), bundle: NSBundle(forClass: InfiniteScrollingView.self))
         registerNib(nib, forCellWithReuseIdentifier: String(InfiniteScrollingCell))
     }
 }
